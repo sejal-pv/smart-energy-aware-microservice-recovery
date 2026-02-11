@@ -1,0 +1,113 @@
+# Smart Energy-Aware Microservice Recovery Configuration
+# Project: PES1PG24CA158
+# Student: Sejal P Vernekar
+
+project:
+  name: "Smart Energy-Aware Microservice Recovery"
+  id: "PES1PG24CA158"
+  version: "1.0.0"
+  description: "AI-powered energy-aware self-healing system for cloud microservices"
+
+system:
+  monitoring_interval: 30  # seconds
+  prediction_threshold: 0.7
+  max_recovery_time: 120   # seconds
+  enable_energy_optimization: true
+
+monitoring:
+  metrics:
+    - cpu_usage_percent
+    - memory_usage_percent
+    - energy_consumption_watts
+    - network_latency_ms
+    - error_rate
+    - response_time_ms
+    - request_rate
+  retention_days: 30
+  alerting:
+    email_notifications: false
+    slack_webhook: ""
+    critical_thresholds:
+      cpu: 90
+      memory: 90
+      energy: 250
+
+ai_model:
+  model_path: "ai_model/trained_cluster_model.pkl"
+  scaler_path: "ai_model/scaler.pkl"
+  cluster_model_path: "ai_model/cloud_cluster_model.pkl"
+  prediction_confidence_threshold: 0.6
+  retrain_interval_hours: 24
+  features:
+    - cpu_usage_percent
+    - memory_usage_percent
+    - energy_consumption_watts
+    - error_rate
+    - response_time_ms
+
+healing:
+  strategies:
+    - scale_up
+    - scale_down
+    - migrate_green
+    - restart
+    - throttle
+    - optimize
+  energy_priority: true
+  min_energy_saving_kwh: 0.1
+  cluster_mapping:
+    1: "scale_up"      # Resource exhaustion
+    2: "migrate_green" # Energy spike
+    3: "optimize"      # Network issues
+    4: "restart"       # High error rate
+    5: "throttle"      # General degradation
+
+cloud:
+  provider: "aws"  # aws, azure, gcp
+  regions:
+    - us-west-2  # Oregon - High renewable energy
+    - eu-west-1  # Ireland - Wind energy
+  green_zones:
+    - us-west-2
+    - eu-north-1
+  energy_data:
+    cost_per_kwh: 0.12  # USD
+    carbon_intensity_kg_per_kwh: 0.233  # kg CO2 per kWh
+
+dashboard:
+  enabled: true
+  host: "0.0.0.0"
+  port: 8080
+  refresh_interval: 5  # seconds
+  themes:
+    - light
+    - dark
+  metrics_display:
+    - energy_savings
+    - carbon_reduction
+    - recovery_success
+    - cost_savings
+
+logging:
+  level: "INFO"
+  file: "logs/system.log"
+  max_size_mb: 100
+  backup_count: 5
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+database:
+  type: "sqlite"  # sqlite, postgres, mysql
+  path: "data/energy_recovery.db"
+  tables:
+    - metrics
+    - predictions
+    - healing_actions
+    - alerts
+  retention_days: 180
+
+simulation:
+  enabled: true
+  services_count: 5
+  failure_rate: 0.05  # 5% failure probability
+  energy_variation: 0.3  # 30% variation in energy consumption
+  simulation_duration_hours: 24
