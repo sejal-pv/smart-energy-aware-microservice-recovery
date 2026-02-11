@@ -17,3 +17,28 @@
 2026-02-12T01:22:25.723+05:30  INFO 17188 --- [energy-recovery-backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-02-12T01:22:25.728+05:30  INFO 17188 --- [energy-recovery-backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-02-12T01:22:25.736+05:30  INFO 17188 --- [energy-recovery-backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-12T01:23:25.214+05:30  INFO 19220 --- [energy-recovery-backend] [main] c.sejal.energy.SmartEnergyApplication    : Starting SmartEnergyApplication v0.0.1-SNAPSHOT using Java 17.0.17 with PID 19220 (C:\Users\verne\SmartEnergy\backend\target\backend-0.0.1-SNAPSHOT.jar started by verne in C:\Users\verne\SmartEnergy\backend)
+2026-02-12T01:23:25.217+05:30 DEBUG 19220 --- [energy-recovery-backend] [main] c.sejal.energy.SmartEnergyApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-12T01:23:25.219+05:30  INFO 19220 --- [energy-recovery-backend] [main] c.sejal.energy.SmartEnergyApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-12T01:23:28.085+05:30  INFO 19220 --- [energy-recovery-backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-12T01:23:28.255+05:30  INFO 19220 --- [energy-recovery-backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 2 JPA repository interfaces.
+2026-02-12T01:23:29.826+05:30  INFO 19220 --- [energy-recovery-backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-12T01:23:29.852+05:30  INFO 19220 --- [energy-recovery-backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-12T01:23:29.853+05:30  INFO 19220 --- [energy-recovery-backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-02-12T01:23:29.969+05:30  INFO 19220 --- [energy-recovery-backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-12T01:23:29.974+05:30  INFO 19220 --- [energy-recovery-backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4646 ms
+2026-02-12T01:23:31.759+05:30  INFO 19220 --- [energy-recovery-backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-12T01:23:31.816+05:30  INFO 19220 --- [energy-recovery-backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-12T01:23:32.129+05:30  INFO 19220 --- [energy-recovery-backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:energy_db user=SA
+2026-02-12T01:23:32.134+05:30  INFO 19220 --- [energy-recovery-backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-12T01:23:33.732+05:30  INFO 19220 --- [energy-recovery-backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-12T01:23:34.508+05:30  INFO 19220 --- [energy-recovery-backend] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-12T01:23:34.925+05:30  WARN 19220 --- [energy-recovery-backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-12T01:23:35.091+05:30  INFO 19220 --- [energy-recovery-backend] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-12T01:23:36.570+05:30  INFO 19220 --- [energy-recovery-backend] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:energy_db'
+2026-02-12T01:23:36.684+05:30  INFO 19220 --- [energy-recovery-backend] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-02-12T01:23:37.073+05:30  INFO 19220 --- [energy-recovery-backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-02-12T01:23:37.127+05:30  INFO 19220 --- [energy-recovery-backend] [main] c.sejal.energy.SmartEnergyApplication    : Started SmartEnergyApplication in 13.282 seconds (process running for 14.977)
+2026-02-12T01:23:39.772+05:30  INFO 19220 --- [energy-recovery-backend] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-12T01:23:39.773+05:30  INFO 19220 --- [energy-recovery-backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-12T01:23:39.775+05:30  INFO 19220 --- [energy-recovery-backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

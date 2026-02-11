@@ -1,0 +1,37 @@
+# Node
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# AI Models
+*.pkl
+catboost_info/
+
+# Logs
+*.log
+logs/
+
+# Build files
+target/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
